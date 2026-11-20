@@ -36,7 +36,7 @@
 </script>
 
 <svelte:head>
-	<title>Login — Tomatica</title>
+	<title>Login | Tomatica</title>
 </svelte:head>
 
 <div

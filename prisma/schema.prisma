@@ -31,20 +31,20 @@ model Session {
 }
 
 model SensorData {
-  id             Int      @id @default(autoincrement())
-  createdAt      DateTime @default(now()) @map("created_at")
-  airTemperature Float?   @map("air_temperature")
-  airHumidity    Float?   @map("air_humidity")
-  lux            Float?
-  soilMoisture   Float?   @map("soil_moisture")
-  rainfall       Float?
-  windSpeed      Float?   @map("wind_speed")
-  soilPh         Float?   @map("soil_ph")
-  nitrogen       Float?
-  phosphorus     Float?
-  potassium      Float?
-  co2            Float?
-  aqi            Float?
+  id             BigInt   @id @default(autoincrement())
+  createdAt      DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  airTemperature Float    @map("air_temperature") @db.Real
+  airHumidity    Float    @map("air_humidity") @db.Real
+  lux            Float    @db.Real
+  soilMoisture   Float    @map("soil_moisture") @db.Real
+  rainfall       Float    @db.Real
+  windSpeed      Float    @map("wind_speed") @db.Real
+  soilPh         Float    @map("soil_ph") @db.Real
+  nitrogen       Float    @db.Real
+  phosphorus     Float    @db.Real
+  potassium      Float    @db.Real
+  co2            Float    @db.Real
+  aqi            Float    @db.Real
 
   @@map("sensor_data")
 }
