@@ -696,7 +696,7 @@
 </script>
 
 <svelte:head>
-	<title>Tomatica — Dashboard Monitoring Tanaman Tomat</title>
+	<title>Tomatica | Dashboard Monitoring Tanaman Tomat</title>
 	<meta
 		name="description"
 		content="Dashboard IoT untuk pemantauan kondisi tanaman tomat secara real-time."
